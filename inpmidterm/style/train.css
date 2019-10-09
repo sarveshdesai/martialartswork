@@ -24,23 +24,26 @@
 .nav-links{
 	background-color: #212121;
 }
+.bigdiv.relative{
+	margin-top: 10%;
+}
 .bigdiv{
 	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-color: grey;
+	height: 90%;
+	margin-top: 10vh;
+	position: relative;
+	background-color: #121212;
 	display: flex;
 }
 .ft{
 	flex: 1;
 	width: 100%;
-	height: 90%;
+	height: 100%;
 	border-left: 10%;
-	border: solid 10px white;
+	border-radius: 0%;
+	border: solid 10px #212121;
 	position: relative;
-  	margin-top: 5%;
   	left: 0;
-  	border-radius: 10px;
   	transform-style: preserve-3d;
   	transition: all 0.5s ease;
 }
@@ -48,195 +51,110 @@
   transform: rotateY(180deg);
 }
  .thefront{
+	 display: flex;
+	 flex-direction: column;
   position: absolute;
+	justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background-image: url("../image/ft.jpg");
   background-size: 100% 100%;
   color: #000;
 }
+.ftimage1{
+	flex: 3;
+	width: 100%;
+	height: 100%;
+	border-color: #212121;
+	  background-image: url("../image/ft.jpg");
+		background-size: 100% 100%;
+}
+.ftimage2{
+	flex: 3;
+	width: 100%;
+	border-color: #212121;
+	  background-image: url("../image/selfdef.jpg");
+		background-size: 100% 100%;
+}
+.ftimage3{
+	flex: 3;
+	width: 100%;
+	border-color: #212121;
+	  background-image: url("../image/nutrition.jpg");
+		background-size: 100% 100%;
+}
+
 .theback{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: blue;
+  background: #212121;
   color: white;
-  text-align: center;
   transform: rotateY(180deg);
+	text-align: center;
+	align-items: center;
 }
-.text1{
-	width: 60%;
-	height: 30%;
-	margin-left: 19%;
-	border-left: 100px;
-	margin-top:  85%;
-	padding: auto 9px;
+.ftt1{
+	flex: 1;
+	background-color: #212121;
+	text-align: center;
+	float: left;
+	margin: auto;
+	padding-top:10vh;
+	text-align: center;
+	height: 100%;
+	width: 100%;
 	color: grey;
 	align-items: center;
-	font-size: 50px;
+	font-size: 2vh;
 	font-weight: bold;
 }
-h2{
-  margin-left: 20%;
+#buttonn{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
 }
-#buttonft{
-  background-color: white;
+#buttonn {
+  border-radius: 4px;
+  background-color: #e50914;
   border: none;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 40px;
-  width: 150px;
-  font-family: 'Montserrat',sans-serif; text-transform: uppercase;
-  margin-top: 50px;
-  border: 3px solid black;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
+
 .matter{
-   font-size: 20px;
-   margin: 8% auto;
+   font-size: 1.2vw;
+	 vertical-align:
+   margin: 15%;
   align-items: center;
 }
-.def{
-	flex: 1;
-  width: 100%;
-  height: 90%;
-  border-left: 10%;
-  border: solid 10px white;
-  position: relative;
-    margin-top: 5%;
-    left: 0;
-    border-radius: 10px;
-	transform-style: preserve-3d;
-  transition: all 0.5s ease;
+
+@media only screen and (max-width:768px) {
+.bigdiv{
+	flex-direction: column;
 }
-.def:hover{
-  transform: rotateY(180deg);
-}
- .thefront2{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background-image: url("../image/selfdef.jpg");
-	background-size: 100% 100%;
-  color: #000;
-}
-.theback2{
-  position: absolute;
- 
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background:red;
-  color: yellow;
-  text-align: center;
-  transform: rotateY(180deg);
-}
-.text2{
-	height: 30%;
-	margin-left: 15%;
-	border-left: 100px;
-	margin-top:  90%;
-	padding: auto 9px;
-	color: grey;
-	align-items: center;
-	font-size: 50px;
-	font-weight: bold;
-}
-#buttondef{
-  background-color: white;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 40px;
-  width: 150px;
-  font-family: 'Montserrat',sans-serif; text-transform: uppercase;
-  margin-top: 50px;
-  border: 3px solid black;
-}
-.matter2{
-   font-size: 20px;
-   margin: 8% auto;
-  align-items: center;
-}
-.food{
-	flex: 1;
-  width: 100%;
-  height: 90%;
-  border-left: 10%;
-  border: solid 10px white;
-  position: relative;
-    margin-top: 5%;
-    left: 0;
-    border-radius: 10px;
-	transform-style: preserve-3d;
-  transition: all 0.5s ease;
-}
-.food:hover{
-  transform: rotateY(180deg);
-}
- .thefront3{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background-image: url("../image/nutrition.jpg");
-	background-size: 100% 100%;
-  color: #000;
-}
-.theback3{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background:yellow;
-  color: black;
-  text-align: center;
-  transform: rotateY(180deg);
-}
-.text3{
-	height: 30%;
-	margin-left: 0%;
-	margin-top:  90%;
-	padding: auto 9px;
-	color: grey;
-	align-items: center;
-	font-size: 50px;
-	font-weight: bold;
-}
-#buttonfood{
-  background-color: white;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 40px;
-  width: 150px;
-  font-family: 'Montserrat',sans-serif; text-transform: uppercase;
-  margin-top: 50px;
-  border: 3px solid black;
-}
-.matter3{
-  font-size: 20px;
-  margin: 8% auto;
-  align-items: center;
+
+.matter{
+   font-size: 0.8vh;
+ }
+ .thefront{
+	 flex-direction: row;
+ }
+ .ftimage1, .ftimage2, .ftimage3{
+	 flex: 1;
+ }
 }

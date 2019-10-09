@@ -1,3 +1,223 @@
-.bgimage{
+.wrapper{
+	height: 200%;
+	weight: 100%;
+}
+.bgimage1{
 	background-image: url("../image/bgtrain.jpg");
+	position: absolute;
+	height: 220%;
+	width: 100%;
+
+}
+.menu{
+	background-color: #212121;
+}
+.hamburger{
+	background-color: #212121;
+}
+.logod{
+	background-color: #212121;
+}
+.nav-links{
+	background-color: #212121;
+}
+.leftycontainer{
+	margin-right:  0%;
+	margin-top: 6vh;
+	height: 40%;
+	width: 20%;
+	position: absolute;
+	border: 1px solid black;
+	background-size: 100% 100%;
+}
+.adds{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	background-image: url("../image/glovesbag.jpg");
+	background-size: 100% 100%;
+animation: main 8s infinite linear;
+box-shadow:  1px 2px 10px 5px white;
+}
+@keyframes main{
+0%{ background-image: url('../image/nunchucks.jpg'); }
+35%{ background-image: url('../image/acc3.jpg'); }
+75%{ background-image: url('../image/acc4.jpg'); }
+
+}
+
+.bigcontainer{
+	width: 80%;
+	height: 100%;
+	flex: 1;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 6vh;
+	position: absolute;
+
+	display: table;
+}
+.container1{
+	display: table-cell;
+	margin-top: 7%;
+
+
+	width: 100%;
+	position: absolute;
+
+}
+.conttext1{
+	position: absolute;
+	height: 100%;
+	margin-right: 40%;
+}
+.conttext1 h1{
+	padding: 1%;
+	text-align: left;
+	font-style: oblique;
+	font-size: 3vw;
+	font-weight: bold;
+	color: indigo;
+}
+.conttext1 h2{
+	margin-left: 3%;
+	font-size: 1.2vw;
+	font-style: sans-serif;
+	margin-right: 20px;
+}
+.media1{
+	position: absolute;
+	margin-left: 60%;
+	margin-top:2%;
+}
+.container2{
+	display: table-cell;
+	margin-top: 32%;
+	width: 100%;
+	position: absolute;
+
+}
+.conttext2{
+	position: absolute;
+	height: 100%;
+	margin-right: 40%;
+
+
+}
+.conttext2 h1{
+	padding: 1%;
+	text-align: left;
+	font-style: oblique;
+	font-size: 3vw;
+	font-weight: bold;
+	color: indigo;
+}
+.conttext2 h2{
+	margin-left: 3%;
+	font-size: 1.2vw;
+	font-style: sans-serif;
+	margin-right: 20px;
+}
+.media2{
+	position: absolute;
+	margin-left: 60%;
+	margin-top:2%;
+}
+.container3{
+	display: table-cell;
+	margin-top: 58%;
+
+	width: 100%;
+	position: absolute;
+
+}
+.conttext3{
+	position: absolute;
+	height: 100%;
+	margin-right: 40%;
+
+
+}
+.conttext3 h1{
+	padding: 1%;
+	text-align: left;
+	font-style: oblique;
+	font-size: 3vw;
+	font-weight: bold;
+	color: indigo;
+}
+.conttext3 h2{
+	margin-left: 3%;
+	font-size: 1.2vw;
+	font-style: sans-serif;
+	margin-right: 20px;
+}
+.media3{
+	position: absolute;
+	margin-left: 60%;
+	margin-top:2%;
+}
+.container4{
+	display: table-cell;
+	margin-top: 84%;
+
+	width: 100%;
+	position: absolute;
+
+}
+.conttext4{
+	position: absolute;
+	height: 100%;
+	margin-right: 40%;
+}
+.conttext4 h1{
+	padding: 1%;
+	text-align: left;
+	font-style: oblique;
+	font-size: 3vw;
+	font-weight: bold;
+	color: indigo;
+}
+.conttext4 h2{
+	margin-left: 3%;
+	font-size: 1.2vw;
+	font-style: sans-serif;
+	margin-right: 20px;
+}
+.media4{
+	position: absolute;
+	margin-left: 60%;
+	margin-top:2%;
+}
+.container5{
+	display: table-cell;
+	margin-top: 110%;
+	width: 100%;
+	position: absolute;
+
+}
+.conttext5{
+	position: absolute;
+	height: 100%;
+	margin-right: 40%;
+
+}
+.conttext5 h1{
+	padding: 1%;
+	text-align: left;
+	font-style: oblique;
+	font-size: 3vw;
+	font-weight: bold;
+	color: indigo;
+}
+.conttext5 h2{
+	margin-left: 3%;
+	font-size: 1.2vw;
+	font-style: sans-serif;
+	margin-right: 20px;
+}
+.media5{
+	position: absolute;
+	margin-left: 60%;
+	margin-top:2%;
 }
