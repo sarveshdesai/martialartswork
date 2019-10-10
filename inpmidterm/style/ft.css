@@ -1,11 +1,11 @@
 .wrapper{
-	height: 200%;
+	height: 230%;
 	weight: 100%;
 }
 .bgimage1{
 	background-image: url("../image/bgtrain.jpg");
 	position: absolute;
-	height: 220%;
+	height: 230%;
 	width: 100%;
 
 }
@@ -29,6 +29,7 @@
 	position: absolute;
 	border: 1px solid black;
 	background-size: 100% 100%;
+	top 13vh;
 }
 .adds{
 	background-color: black;
@@ -38,6 +39,8 @@
 	background-size: 100% 100%;
 animation: main 8s infinite linear;
 box-shadow:  1px 2px 10px 5px white;
+cursor: pointer;
+top 13vh;F
 }
 @keyframes main{
 0%{ background-image: url('../image/nunchucks.jpg'); }

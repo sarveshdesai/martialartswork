@@ -39,6 +39,7 @@ nav {
   background-position: 10% 50%;
   background-repeat: no-repeat;
   z-index: 3;
+  cursor: pointer;
 }
 
 .logo {
