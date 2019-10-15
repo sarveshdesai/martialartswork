@@ -1,0 +1,26 @@
+
+.body, html{
+  background-color: #212121;
+}
+.container{
+  background-color: #232323;
+}
+h2, h3, p{
+  color: white;
+}
+.text-info{
+  background-color: red;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed white;
+}
+#hrr{
+  border: 2px solid red;
+}
+#htr{
+  border: 1px dashed red;
+}
+.row{
+  background-color: #434343;
+}
