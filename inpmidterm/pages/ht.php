@@ -1,31 +1,61 @@
-<?php
-
-//read.php
-
-$feed_url = "http://localhost/phpmyadmin/phpp/tryrss.php";
-
-$object = new DOMDocument();
-
-$object->load($feed_url);
-
-$content = $object->getElementsByTagName("item");
-
-
-?>
 
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Nigga News</title>
+   <title>Martial Artswork - NEWS</title>
+ 	<link rel="shortcut icon" HREF="../image/logo.png">
   <link rel="stylesheet" type="text/css" href="pp.css">
- </head>
- <body>
+  <link rel="stylesheet" type="text/css" href="../style/navbc.css">
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+  <script type="text/javascript">
+        google.load("jquery", "1.3.2");
+  </script>
+  <script type="text/javascript">
+      function getFresh(){
+        $('#loadArea').load("feeder.php");
+        console.log("ck")
+      };
+      $(function(){
+        getFresh();
+        var int = setInterval("getFresh()",5000)
+      });
+      $('#loadArea').load("feeder.php");
+  </script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="menu">
+			<nav>
+
+			    <div class="hamburger">
+			    	<div class="line"></div>
+			    	<div class="line"></div>
+			    	<div class="line"></div>
+			    </div>
+
+			    <div class="logod" onclick="home()">
+			    </div>
+					<script type="text/javascript">
+			       function home(){
+			         location.href="index.html"
+			       }
+			    </script>
+
+			    <ul class="nav-links">
+					<li><a href="index.html"> HOME </a></li>
+					<li><a href="Training.html"> TRAINING </a></li>
+					<li><a href="ht.php"  id="onlink"> NEWS </a></li>
+					<li><a href="about us.html"> About US </a></li>
+			    </ul>
+   			</nav>
+
+		</div>
   <div class="container">
    <br />
-   <h2 align="center">NEWS</h2>
+   <h2 align="center" color="#212121">.</h2>
    <br />
-   <div class="sin">
-   <?php
+   <div class="sin" id="loadArea">
+<!--  <!-- <?php
 
    foreach($content as $row)
    {
@@ -50,8 +80,9 @@ $content = $object->getElementsByTagName("item");
 
    }
 
-   ?>
+   ?>--> -->
  </div>
   </div>
+</div>
  </body>
 </html>
