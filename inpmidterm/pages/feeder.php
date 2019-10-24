@@ -2,7 +2,7 @@
 
 //read.php
 
-$feed_url = "http://localhost/phpmyadmin/phpp/tryrss.php";
+$feed_url = "http://localhost/martialartswork/inpmidterm/pages/tryrss.php";
 
 $object = new DOMDocument();
 
