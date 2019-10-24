@@ -26,14 +26,13 @@ width: 100%;
   position: absolute;
   display: block;
   background-size: 100% 100%;
-  background-color: white;
-  /*background-image: url("../image/6.jpg");*/
+  background-image: url("../image/4.jpg");
+
   margin-top: 5%;
   height: auto;
   weight: auto;
-
 }
-/*.leftycont{
+.leftycont{
   position: absolute;
 	height: 50%;
 	width: 20%;
@@ -56,20 +55,22 @@ top 13vh;F
 35%{ background-image: url('../image/acc3.jpg'); }
 75%{ background-image: url('../image/acc4.jpg'); }
 
-}*/
+}
 .bigcont{
 
 height: auto;
 margin-top:
 display: block;
 }
+
 .smallcont{
   left: 20%;
+  margin-top: 10%;
   display: inline-block;
   padding: 10px;
   margin:10px;
-  margin-left: 0%;
-  /*display: flex;*/
+  margin-left: 20%;
+  display: flex;
 }
 .smallcont h1{
 	padding: 1%;
@@ -77,48 +78,37 @@ display: block;
 	font-style: Times;
 	font-size: 2vw;
 	font-weight: bold;
-	color:#24D7D7;
+	color: white;
 }
 .smallcont h2{
 	margin-left: 3%;
-	font-size: 1.6vw;
-  line-height: 4vh;
-  font-weight: 0;
-	font-style: bold ;
-	margin-right: 20px;
-  color: black;
-}
-.smallcont h3{
-	margin-left: 3%;
 	font-size: 1.2vw;
   line-height: 4vh;
-  font-weight: 1000;
+  font-weight: 900;
 	font-style: bold ;
 	margin-right: 20px;
-  color: #AF391C;
+  color: #C9CCBE;
+}
+.smallcont strong{
+  color: #7F9B21;
 }
 .innerdiv{
 flex:2;
-flex-direction: column;
-align-items: center;
-align-content: center;
 }
-
 .media{
-  margin-top: 2%;
-  margin-left: 30%;
   flex:1;
-  align-content: center;
-  flex-direction: column;
+
 }
 /*--------------------------------------media queries-----------------------------------*/
 @media only screen and (max-width:768px) {
+
 .bigcont{
 	flex-direction: column;
+  margin-top: 10%;
 }
 
 .smallcont{
-  margin-top:7%;
+  margin-top:10%;
   flex-direction: column;
    font-size: 3vh;
  }
@@ -134,7 +124,7 @@ align-content: center;
  }
  .media{
    flex-direction: column;
-   margin-left: 10%;
+   margin-left: 2%;
  }
  .media iframe{
    align-items: center;
@@ -147,7 +137,6 @@ align-content: center;
 @media only screen and (max-width:1200px) {
 .bigcont{
 	flex-direction: column;
-  margin-top: 7%;
 }
 
 .smallcont{
@@ -201,28 +190,3 @@ align-content: center;
      height: 10%;
    }
   }
-  @media only screen and (max-width:1600px) {
-    .smallcont{
-      margin-top:4%;
-       font-size: 4vh;
-     }
-     .smallcont h1{
-       font-size: 6vh;
-     }
-     .smallcont h2{
-       font-size: 3vh;
-     }
-     .innerdiv{
-
-       left: 0%;
-     }
-     .media {
-       align-items: center;
-     }
-     .media iframe{
-       margin-top: 20%;
-     }
-     .leftycont{
-       height: 10%;
-     }
-    }
